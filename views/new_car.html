@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Car</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>New Car</h1>
+        <div id="nav">
+            <a href="/cats">Cars</a>
+            <a href="/cats">Cats</a>
+            <span><em>New Car</em></span>
+        </div>
+        <div id="content_layer">
+            <form action='/' name="request" method='post'>
+                <label for="name"><span>Car Name:</span>
+                <input type='text' name='name' id='name' placeholder="Enter Car Name:"></label>
+                
+                <label for="location"><span>Make:</span>
+                <select name="location" id="location">
+                    <option>Ford</option>
+                    <option>Dodge</option>
+                    <option>Chevy</option>
+                    <option>Toyota</option>
+                    <option>Mercedes</option>
+                    <option>Renault</option>
+                    <option>Maserati</option>
+                </select></label>
+                
+
+                <label for="language"><span>Model:</span>
+                <select name="language" id="language">
+                    <option {{session['JQuery']}}>F-150</option>
+                    <option {{session['Java']}}>Ram</option>
+                    <option {{session['Javascript']}}>Camero</option>
+                    <option {{session['C Sharp']}}>Tacoma</option>
+                    <option {{session['Python']}}>GLA-45</option>
+                    <option {{session['iOS Swift']}}>Gran Turismo</option>
+                </select></label>
+                
+                <label for="comment"><span>Comment (Optional):</span>
+                <textarea name="comment" rows="4" cols="50"></textarea></label>
+                
+                <span>
+                    <input type='submit' value='Submit'>
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
